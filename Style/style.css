@@ -91,7 +91,6 @@
         transition: scale 0.2s ease;
 
     }
-
     .action_btn:hover {
         scale: 1.05;
     }
