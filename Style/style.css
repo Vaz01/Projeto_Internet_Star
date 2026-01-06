@@ -4,6 +4,10 @@
         box-sizing: border-box;
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
         margin: 0;
         background-color: #000;
@@ -81,8 +85,8 @@
     }
 
     .action_btn {
-        background-color: rgb(255, 196, 0);
-        color: #fff;
+        background: linear-gradient(135deg, #FFB703, #FFD166);
+        color: #111;
         padding: 0.5rem 1rem;
         border-radius: 20px;
         font-size: 0.8rem;
@@ -91,6 +95,7 @@
         transition: scale 0.2s ease;
 
     }
+
     .action_btn:hover {
         scale: 1.05;
     }
@@ -515,32 +520,74 @@
     }
 
     .btn {
-        padding: 10px 10px;
-        border: none;
+        display: flex;
+        align-items: center;
+
+        justify-content: center;
+
+
+        width: 100%;
+        max-width: 240px;
+        height: 44px;
+
+        margin: 16px auto 0;
+        border-radius: 999px;
+
+        background: rgba(0, 0, 0, 0.45);
+        color: #fff;
         font-size: 15px;
-        border-radius: 20px;
-        display: block;
-        margin: 0 auto;
-        background-color: rgb(44, 44, 44);
-        color: white;
+        font-weight: 500;
+        text-decoration: none;
+
+        transition: all 0.3s ease;
 
     }
 
     .btn:hover {
-        scale: 1.05;
-        background-color: #0056b3;
-        animation: pulse 1s infinite ease-in-out;
+        background: #0056b3;
+        transform: scale(1.05);
         cursor: pointer;
     }
 
     .texto {
         text-align: center;
-        padding: 30px 1px 1px;
+        padding: 48px 15px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-.P{
-    text-align: center;
-}
+
+    .P {
+        text-align: center;
+        padding: 20px;
+    }
+
     .texto p {
         font-size: 20px;
     }
+
+    .botao-app img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .botao-app img:hover {
+        transform: translateY(-8px) scale(1.1);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+    }
+
+    .botao-app {
+        position: fixed;
+        right: 20px;
+        bottom: 30px;
+        z-index: 9999;
+    }
+.botao-app img {
+    animation: flutuar 2s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

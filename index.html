@@ -11,12 +11,14 @@
 </head>
 
 <body>
+
+    <!--Meu Header -->
     <header>
         <div class="nav_bar">
             <div class="logo"><img src="/Image/Logo The Fiber.png" alt="" style="width: 130px;"></div>
             <ul class="links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#plans">Planos</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#black">Planos</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
 
@@ -28,14 +30,14 @@
                 </div>
         </div>
         <div class="dropdown_menu open">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Planos</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#black">Planos</a></li>
             <li><a href="#">Contato</a></li>
             <li><a href="#" class="action_btn">Contratar</a></li>
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="home">
 
         <section class="container">
             <div class="container-wrapper">
@@ -50,10 +52,14 @@
                 <p class="P">Tecnologia em fibra óptica que transforma sua conexão</p>
             </div>
         </section>
-
+        
+        <div class="botao-app">
+            <a href="https://wa.me/62986207897" target="_blank">
+                <img src="/Image/whatsapp (4).png" alt="Icone-WhatsApp" width="80px">
+            </a>
+        </div>
     </section>
-
-    <section class="section-black">
+    <section class="section-black" id="black">
         <section class="plans">
             <div class="card basic">
                 <h3>Básico</h3>
@@ -164,7 +170,7 @@
                 app.
             </p>
 
-            <button class="btn">Assinar Agora</button>
+            <a href="#black" class="btn">Assinar Agora</a>
         </div>
 
         <div class="card-pai">
@@ -178,7 +184,7 @@
                 app só.!
             </p>
 
-            <button class="btn">Assinar Agora</button>
+            <a href="#black" class="btn">Assinar Agora</a>
         </div>
 
         <div class="card-pai">
@@ -192,7 +198,7 @@
                 app.
             </p>
 
-            <button class="btn">Assinar Agora</button>
+            <a href="#black" class="btn">Assinar Agora</a>
         </div>
 
         <div class="card-pai">
@@ -203,14 +209,13 @@
             <p class="sub-title">
                 Curta novelas, séries originais, filmes, realities e esportes ao vivo — como o futebol brasileiro. O
                 Globoplay reúne conteúdos da TV Globo, canais ao vivo, produções exclusivas e muito mais, tudo em um só
-                app.
+                app aproveite hoje mesmo.
             </p>
 
-            <button class="btn">Assinar Agora</button>
+            <a href="#black" class="btn">Assinar Agora</a>
         </div>
-
-
     </section>
+
     <script src="/JavaScript/Carrocel.js"></script>
     <script src="/JavaScript/app.js"></script>
 </body>
